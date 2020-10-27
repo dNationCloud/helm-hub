@@ -29,5 +29,5 @@ We use GitHub issues to manage requests and bugs, please visit our discussion fo
 
 # Project Background
 
-[dNationCloud](https://github.com/dNationCloud) Helm Hub project is maintained and used in production by [dNation](https://www.dnation.tech/) professionals 
+[dNationCloud](https://github.com/dNationCloud) Helm Hub project is maintained and used in production by [dNation](https://www.dnation.cloud/) professionals 
 to simplify their day-to-day tasks.  
