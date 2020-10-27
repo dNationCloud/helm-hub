@@ -3,9 +3,8 @@ description: A Helm Hub for storing dNationCloud helm charts.
 theme: jekyll-theme-minimal
 url: "https://dnationcloud.github.io/helm-hub/"
 repo_name: dnationcloud
-logo: https://storage.googleapis.com/ifne.eu/public/icons/dnation.png
-
+logo: https://cdn.ifne.eu/public/icons/dnation.png
 exclude:
-  - Gemfile
-  - Gemfile.lock
-  - .gitignore
+- Gemfile
+- Gemfile.lock
+- .gitignore
