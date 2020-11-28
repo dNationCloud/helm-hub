@@ -234,4 +234,39 @@ entries:
     urls:
     - https://dnationcloud.github.io/helm-hub/dnation-kubernetes-monitoring-stack-1.0.26.tgz
     version: 1.0.26
-generated: "2020-11-13T08:55:33.559435453Z"
+  dnation-ping:
+  - apiVersion: v2
+    appVersion: 0.1.3
+    created: "2020-11-28T12:19:14.320706084Z"
+    dependencies:
+    - condition: prometheus.enabled
+      name: prometheus
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 11.16.*
+    - condition: grafana.enabled
+      name: grafana
+      repository: https://grafana.github.io/helm-charts
+      version: 6.1.*
+    - condition: prometheus-blackbox-exporter.enabled
+      name: prometheus-blackbox-exporter
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 4.9.*
+    description: dNation Ping is a transparent tool for pinging selected IP addresses
+      or domain names in set intervals with results displayed on graph
+    digest: 2bc8bbcb7b6c1679e6c3a6143ca37b8ab0d3d0f4cc05be4e51023bfdf4f0278e
+    home: https://git.ifne.eu/dnation/ping
+    icon: https://cdn.ifne.eu/public/icons/dnation_ping.png
+    keywords:
+    - kubernetes
+    - ping
+    - grafana
+    - prometheus
+    - blackbox-exporter
+    maintainers:
+    - email: cloud@dnation.cloud
+      name: dnation
+    name: dnation-ping
+    urls:
+    - https://dnationcloud.github.io/helm-hub/dnation-ping-0.1.2.tgz
+    version: 0.1.2
+generated: "2020-11-28T12:19:14.303677339Z"
