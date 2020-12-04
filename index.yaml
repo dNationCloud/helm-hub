@@ -3,10 +3,10 @@ entries:
   dnation-kubernetes-jsonnet-translator:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2020-12-04T18:48:18.080759227Z"
+    created: "2020-12-04T18:53:53.123173619Z"
     description: dNation Translator is a simple container for translating jsonnet
       content stored in k8s configmaps to **grafana dashboards** or **prometheus rules**.
-    digest: aecc7b0ca1dd22580ee039346483f83e9f28240f478e908745685a58893bb20f
+    digest: 8aa8aa6c9b16cc74d1f8bdfbfeed2d0e11281d844c7a94dbda9dd3ee3a88c7b7
     home: https://dnation.cloud
     icon: https://cdn.ifne.eu/public/icons/dnation_jsonnet_translator.png
     keywords:
@@ -294,4 +294,4 @@ entries:
     urls:
     - https://dnationcloud.github.io/helm-hub/dnation-ping-0.1.2.tgz
     version: 0.1.2
-generated: "2020-12-04T18:48:18.070100433Z"
+generated: "2020-12-04T18:53:53.105941756Z"
