@@ -349,6 +349,42 @@ entries:
   dnation-ping:
   - apiVersion: v2
     appVersion: 0.1.6
+    created: "2021-01-21T13:57:12.488366049Z"
+    dependencies:
+    - condition: prometheus.enabled
+      name: prometheus
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 11.16.*
+    - condition: grafana.enabled
+      name: grafana
+      repository: https://grafana.github.io/helm-charts
+      version: 6.1.*
+    - condition: prometheus-blackbox-exporter.enabled
+      name: prometheus-blackbox-exporter
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 4.9.*
+    description: dNation Ping detects network connection problems by measuring ping
+      response times of selected servers every 15 seconds.
+    digest: 70f57dbc0664c44ba2c01f4e92cdaf8afad105d5aedea0ff077fee6741363a33
+    home: https://www.dnation.cloud
+    icon: https://cdn.ifne.eu/public/icons/dnation_ping.png
+    keywords:
+    - kubernetes
+    - ping
+    - grafana
+    - prometheus
+    - blackbox-exporter
+    maintainers:
+    - email: cloud@dnation.cloud
+      name: dNation
+    name: dnation-ping
+    sources:
+    - https://github.com/dNationCloud/ping
+    urls:
+    - https://dnationcloud.github.io/helm-hub/dnation-ping-0.1.7.tgz
+    version: 0.1.7
+  - apiVersion: v2
+    appVersion: 0.1.6
     created: "2021-01-20T13:48:33.834475856Z"
     dependencies:
     - condition: prometheus.enabled
@@ -521,4 +557,4 @@ entries:
     urls:
     - https://dnationcloud.github.io/helm-hub/dnation-ping-0.1.2.tgz
     version: 0.1.2
-generated: "2021-01-20T13:48:33.824295904Z"
+generated: "2021-01-21T13:57:12.477782615Z"
