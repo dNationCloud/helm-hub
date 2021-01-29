@@ -270,7 +270,7 @@ entries:
   dnation-kubernetes-monitoring-stack:
   - apiVersion: v2
     appVersion: 1.0.22
-    created: "2021-01-29T13:08:36.571383089Z"
+    created: "2021-01-29T13:24:32.552714891Z"
     dependencies:
     - condition: kube-prometheus-stack.enabled
       name: kube-prometheus-stack
@@ -285,7 +285,7 @@ entries:
       repository: https://dnationcloud.github.io/helm-hub
       version: 1.0.*
     description: An umbrella helm chart for Kubernetes monitoring based on kube-prometheus-stack, loki-stack and dnation-kubernetes-monitoring.
-    digest: d55931488948b6f6a29234d95605ed023dc311bb4111676199faff386420d197
+    digest: 09195e56971aa3e574728ad08c133c72d7261ab3759d5f0cacad7e4347cdc227
     home: https://dnation.cloud
     icon: https://cdn.ifne.eu/public/icons/dnation_k8sm8g.png
     keywords:
@@ -725,4 +725,4 @@ entries:
     urls:
     - https://dnationcloud.github.io/helm-hub/dnation-ping-0.1.2.tgz
     version: 0.1.2
-generated: "2021-01-29T13:19:46.518094215Z"
+generated: "2021-01-29T13:24:32.494689102Z"
