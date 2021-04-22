@@ -142,6 +142,26 @@ entries:
   dnation-kubernetes-linter:
   - apiVersion: v2
     appVersion: 0.2.1
+    created: "2021-04-22T07:18:54.70068132Z"
+    description: A software stack for analysis of live Kubernetes clusters.
+    digest: c790574541a7114b44fb971ba78edd2fe33f0d049b17f8fa9ad0486c46c00c13
+    home: https://dnation.cloud
+    keywords:
+    - dnation
+    - kubernetes
+    - linter
+    maintainers:
+    - email: cloud@dNation.cloud
+      name: dNation
+    name: dnation-kubernetes-linter
+    sources:
+    - https://github.com/dNationCloud/kubernetes-linter
+    type: application
+    urls:
+    - https://dnationcloud.github.io/helm-hub/dnation-kubernetes-linter-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: 0.2.1
     created: "2021-01-26T13:54:04.428141502Z"
     description: A software stack for analysis of live Kubernetes clusters.
     digest: dc11a4f2d83bc6acd28f0f06b83199ce7156a29673e663f0da861dd69803f954
@@ -1231,4 +1251,4 @@ entries:
     urls:
     - https://dnationcloud.github.io/helm-hub/dnation-ping-0.1.2.tgz
     version: 0.1.2
-generated: "2021-04-22T07:18:28.251900597Z"
+generated: "2021-04-22T07:18:54.699821119Z"
