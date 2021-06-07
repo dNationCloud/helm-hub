@@ -4,7 +4,8 @@ entries:
   - apiVersion: v2
     appVersion: 0.4.0
     created: "2021-04-19T09:50:01.881223493Z"
-    description: dNation Translator is a simple container for translating jsonnet content stored in k8s configmaps to **grafana dashboards** or **prometheus rules**.
+    description: dNation Translator is a simple container for translating jsonnet
+      content stored in k8s configmaps to **grafana dashboards** or **prometheus rules**.
     digest: ad1a37fd5d3fe519e7dbda20ac3ea9bc3cfbf620d4cbbb76a9ae1d333ba2fece
     home: https://dnation.cloud
     icon: https://cdn.ifne.eu/public/icons/dnation_jsonnet_translator.png
@@ -27,7 +28,8 @@ entries:
   - apiVersion: v2
     appVersion: 0.3.0
     created: "2021-04-01T09:57:21.913897605Z"
-    description: dNation Translator is a simple container for translating jsonnet content stored in k8s configmaps to **grafana dashboards** or **prometheus rules**.
+    description: dNation Translator is a simple container for translating jsonnet
+      content stored in k8s configmaps to **grafana dashboards** or **prometheus rules**.
     digest: 8e40db767407b70626a4c9ddb08b0a97c230cd44e58f374a5ecff8aaa6692af0
     home: https://dnation.cloud
     icon: https://cdn.ifne.eu/public/icons/dnation_jsonnet_translator.png
@@ -50,7 +52,8 @@ entries:
   - apiVersion: v2
     appVersion: 0.2.0
     created: "2021-02-15T11:54:17.369913407Z"
-    description: dNation Translator is a simple container for translating jsonnet content stored in k8s configmaps to **grafana dashboards** or **prometheus rules**.
+    description: dNation Translator is a simple container for translating jsonnet
+      content stored in k8s configmaps to **grafana dashboards** or **prometheus rules**.
     digest: e98d752f37c5989761623b820bfb77f5e69c829d74257788768588ad7e763f31
     home: https://dnation.cloud
     icon: https://cdn.ifne.eu/public/icons/dnation_jsonnet_translator.png
@@ -73,7 +76,8 @@ entries:
   - apiVersion: v2
     appVersion: 0.1.2
     created: "2021-01-25T09:32:13.637914959Z"
-    description: dNation Translator is a simple container for translating jsonnet content stored in k8s configmaps to **grafana dashboards** or **prometheus rules**.
+    description: dNation Translator is a simple container for translating jsonnet
+      content stored in k8s configmaps to **grafana dashboards** or **prometheus rules**.
     digest: b86e522938e8b1ef67632f63e00bc99346d08d4cf71a87753ad13020eb4d7953
     home: https://dnation.cloud
     icon: https://cdn.ifne.eu/public/icons/dnation_jsonnet_translator.png
@@ -96,7 +100,8 @@ entries:
   - apiVersion: v2
     appVersion: 0.1.1
     created: "2021-01-11T16:10:48.892801693Z"
-    description: dNation Translator is a simple container for translating jsonnet content stored in k8s configmaps to **grafana dashboards** or **prometheus rules**.
+    description: dNation Translator is a simple container for translating jsonnet
+      content stored in k8s configmaps to **grafana dashboards** or **prometheus rules**.
     digest: ec0174123cb548201acead85c1e54203f886b728fbb2c9a72f729ac628aa8094
     home: https://dnation.cloud
     icon: https://cdn.ifne.eu/public/icons/dnation_jsonnet_translator.png
@@ -119,7 +124,8 @@ entries:
   - apiVersion: v2
     appVersion: 0.1.0
     created: "2020-12-10T10:28:18.661059803Z"
-    description: dNation Translator is a simple container for translating jsonnet content stored in k8s configmaps to **grafana dashboards** or **prometheus rules**.
+    description: dNation Translator is a simple container for translating jsonnet
+      content stored in k8s configmaps to **grafana dashboards** or **prometheus rules**.
     digest: 4b37b25b50429338e734888a74a3bea3699b39eecb5b44df165f97a088b07cd0
     home: https://dnation.cloud
     icon: https://cdn.ifne.eu/public/icons/dnation_jsonnet_translator.png
@@ -202,6 +208,33 @@ entries:
     version: 0.1.0
   dnation-kubernetes-monitoring:
   - apiVersion: v2
+    appVersion: 1.3.0
+    created: "2021-06-07T07:00:29.450346599Z"
+    dependencies:
+    - condition: dnation-kubernetes-jsonnet-translator.enabled
+      name: dnation-kubernetes-jsonnet-translator
+      repository: https://dnationcloud.github.io/helm-hub/
+      version: 0.4.*
+    description: A set of Grafana dashboards and Prometheus alerts to cover Kubernetes
+      monitoring in an easy way using a drill-down principle.
+    digest: 41108083ec505edec6e6735f344e67dab43890c4ea878bd8f04c2b3a325d4027
+    home: https://dnation.cloud
+    icon: https://cdn.ifne.eu/public/icons/dnation_k8sm8g.png
+    keywords:
+    - dnation
+    - kubernetes
+    - monitoring
+    - logging
+    maintainers:
+    - email: cloud@dNation.cloud
+      name: dNation
+    name: dnation-kubernetes-monitoring
+    sources:
+    - https://github.com/dNationCloud/kubernetes-monitoring
+    urls:
+    - https://dnationcloud.github.io/helm-hub/dnation-kubernetes-monitoring-1.3.0.tgz
+    version: 1.3.0
+  - apiVersion: v2
     appVersion: 1.2.1
     created: "2021-05-13T07:21:41.14937229Z"
     dependencies:
@@ -209,7 +242,8 @@ entries:
       name: dnation-kubernetes-jsonnet-translator
       repository: https://dnationcloud.github.io/helm-hub/
       version: 0.4.*
-    description: A set of Grafana dashboards and Prometheus alerts to cover Kubernetes monitoring in an easy way using a drill-down principle.
+    description: A set of Grafana dashboards and Prometheus alerts to cover Kubernetes
+      monitoring in an easy way using a drill-down principle.
     digest: 171874b3c0461d461df58f6d95a642f862e82e39209aa1ec4770cf84949d8fd3
     home: https://dnation.cloud
     icon: https://cdn.ifne.eu/public/icons/dnation_k8sm8g.png
@@ -234,7 +268,8 @@ entries:
       name: dnation-kubernetes-jsonnet-translator
       repository: https://dnationcloud.github.io/helm-hub/
       version: 0.4.*
-    description: A set of Grafana dashboards and Prometheus alerts to cover Kubernetes monitoring in an easy way using a drill-down principle.
+    description: A set of Grafana dashboards and Prometheus alerts to cover Kubernetes
+      monitoring in an easy way using a drill-down principle.
     digest: 480ef52eb77814b08ea51629da3bc7e026069d147047c7268836b9ca1ff94e12
     home: https://dnation.cloud
     icon: https://cdn.ifne.eu/public/icons/dnation_k8sm8g.png
@@ -259,7 +294,8 @@ entries:
       name: dnation-kubernetes-jsonnet-translator
       repository: https://dnationcloud.github.io/helm-hub/
       version: 0.2.*
-    description: A set of Grafana dashboards and Prometheus alerts to cover Kubernetes monitoring in an easy way using a drill-down principle.
+    description: A set of Grafana dashboards and Prometheus alerts to cover Kubernetes
+      monitoring in an easy way using a drill-down principle.
     digest: 23590cc7ef96ca08535f47014f55f1e1fe6b796b0b619a8f3190ba7486458b49
     home: https://dnation.cloud
     icon: https://cdn.ifne.eu/public/icons/dnation_k8sm8g.png
@@ -284,7 +320,8 @@ entries:
       name: dnation-kubernetes-jsonnet-translator
       repository: https://dnationcloud.github.io/helm-hub/
       version: 0.2.*
-    description: A set of Grafana dashboards and Prometheus alerts to cover Kubernetes monitoring in an easy way using a drill-down principle.
+    description: A set of Grafana dashboards and Prometheus alerts to cover Kubernetes
+      monitoring in an easy way using a drill-down principle.
     digest: 3b1eaac4a6b5a641c149af13f020518d8e9a58a568f318fe2a627e3d6edc1e42
     home: https://dnation.cloud
     icon: https://cdn.ifne.eu/public/icons/dnation_k8sm8g.png
@@ -309,7 +346,8 @@ entries:
       name: dnation-kubernetes-jsonnet-translator
       repository: https://dnationcloud.github.io/helm-hub/
       version: 0.2.*
-    description: A set of Grafana dashboards and Prometheus alerts to cover Kubernetes monitoring in an easy way using a drill-down principle.
+    description: A set of Grafana dashboards and Prometheus alerts to cover Kubernetes
+      monitoring in an easy way using a drill-down principle.
     digest: ad9f2012ee5848365177b99e07c814cd67870346cad0ad7ce3c07e2178c8a25f
     home: https://dnation.cloud
     icon: https://cdn.ifne.eu/public/icons/dnation_k8sm8g.png
@@ -334,7 +372,8 @@ entries:
       name: dnation-kubernetes-jsonnet-translator
       repository: https://dnationcloud.github.io/helm-hub/
       version: 0.1.*
-    description: A set of Grafana dashboards and Prometheus alerts to cover Kubernetes monitoring in an easy way using a drill-down principle.
+    description: A set of Grafana dashboards and Prometheus alerts to cover Kubernetes
+      monitoring in an easy way using a drill-down principle.
     digest: d7d9fc01de63cd511d461c239cb8bd258ddd6be0f8b37c0b7ea347ef474fb1f0
     home: https://dnation.cloud
     icon: https://cdn.ifne.eu/public/icons/dnation_k8sm8g.png
@@ -359,7 +398,8 @@ entries:
       name: dnation-kubernetes-jsonnet-translator
       repository: https://dnationcloud.github.io/helm-hub/
       version: 0.1.*
-    description: A set of Grafana dashboards and Prometheus alerts to cover Kubernetes monitoring in an easy way using a drill-down principle.
+    description: A set of Grafana dashboards and Prometheus alerts to cover Kubernetes
+      monitoring in an easy way using a drill-down principle.
     digest: b556398defdbf80a92d93f33cec9f4e0db65211fd342bd758c56cb4fc6526ee2
     home: https://dnation.cloud
     icon: https://cdn.ifne.eu/public/icons/dnation_k8sm8g.png
@@ -384,7 +424,8 @@ entries:
       name: dnation-kubernetes-jsonnet-translator
       repository: https://dnationcloud.github.io/helm-hub/
       version: 0.1.*
-    description: A set of Grafana dashboards and Prometheus alerts to cover Kubernetes monitoring in an easy way using a drill-down principle.
+    description: A set of Grafana dashboards and Prometheus alerts to cover Kubernetes
+      monitoring in an easy way using a drill-down principle.
     digest: da8845c05c930655c727a8e8855559e009fa95da35601637d7d3ac9af9353783
     home: https://dnation.cloud
     icon: https://cdn.ifne.eu/public/icons/dnation_k8sm8g.png
@@ -409,7 +450,8 @@ entries:
       name: dnation-kubernetes-jsonnet-translator
       repository: https://dnationcloud.github.io/helm-hub/
       version: 0.1.*
-    description: A set of Grafana dashboards and Prometheus alerts to cover Kubernetes monitoring in an easy way using a drill-down principle.
+    description: A set of Grafana dashboards and Prometheus alerts to cover Kubernetes
+      monitoring in an easy way using a drill-down principle.
     digest: 2e7db85a85ff056e630362e06f5b44f854460cf13ef418268f8ddcc02ada3c89
     home: https://dnation.cloud
     icon: https://cdn.ifne.eu/public/icons/dnation_k8sm8g.png
@@ -434,7 +476,8 @@ entries:
       name: dnation-kubernetes-jsonnet-translator
       repository: https://dnationcloud.github.io/helm-hub/
       version: 0.1.*
-    description: A set of Grafana dashboards and Prometheus alerts to cover Kubernetes monitoring in an easy way using a drill-down principle.
+    description: A set of Grafana dashboards and Prometheus alerts to cover Kubernetes
+      monitoring in an easy way using a drill-down principle.
     digest: f30336295112d42efab044857eea73cdbb16249ccf12bf47d33e4e4424744707
     home: https://dnation.cloud
     icon: https://cdn.ifne.eu/public/icons/dnation_k8sm8g.png
@@ -459,7 +502,8 @@ entries:
       name: dnation-kubernetes-jsonnet-translator
       repository: https://dnationcloud.github.io/helm-hub/
       version: 0.1.*
-    description: A set of Grafana dashboards and Prometheus alerts to cover Kubernetes monitoring in an easy way using a drill-down principle.
+    description: A set of Grafana dashboards and Prometheus alerts to cover Kubernetes
+      monitoring in an easy way using a drill-down principle.
     digest: 0940d0b60fda74a70cabb4d2635eaf5aece855e5da233751b28de1e3259d193d
     home: https://dnation.cloud
     icon: https://cdn.ifne.eu/public/icons/dnation_k8sm8g.png
@@ -479,7 +523,8 @@ entries:
   - apiVersion: v2
     appVersion: 1.0.19
     created: "2020-11-13T08:53:13.481831001Z"
-    description: A set of Grafana dashboards and Prometheus alerts to cover Kubernetes monitoring in an easy way using a drill-down principle.
+    description: A set of Grafana dashboards and Prometheus alerts to cover Kubernetes
+      monitoring in an easy way using a drill-down principle.
     digest: edd3d440279475d02abaedd19e7b7939b14c7328957b2a43268a4c2882c26245
     home: https://dnation.cloud
     icon: https://cdn.ifne.eu/public/icons/dnation_k8sm8g.png
@@ -499,7 +544,8 @@ entries:
   - apiVersion: v2
     appVersion: 1.0.18
     created: "2020-11-13T08:48:14.02577821Z"
-    description: A set of Grafana dashboards and Prometheus alerts to cover Kubernetes monitoring in an easy way using a drill-down principle.
+    description: A set of Grafana dashboards and Prometheus alerts to cover Kubernetes
+      monitoring in an easy way using a drill-down principle.
     digest: a714926b035d1b33fd55de7485295390b2ab705a00436e8c734482199be7a4a8
     home: https://dnation.cloud
     icon: https://cdn.ifne.eu/public/icons/dnation_k8sm8g.png
@@ -519,7 +565,8 @@ entries:
   - apiVersion: v2
     appVersion: 1.0.17
     created: "2020-10-27T13:07:14.606575764Z"
-    description: A set of Grafana dashboards and Prometheus alerts to cover Kubernetes monitoring in an easy way using a drill-down principle.
+    description: A set of Grafana dashboards and Prometheus alerts to cover Kubernetes
+      monitoring in an easy way using a drill-down principle.
     digest: e053113f31f059494308644ea1c8250b7f5d138510c505a30278789c604191cf
     home: https://dnation.cloud
     icon: https://cdn.ifne.eu/public/icons/dnation_k8sm8g.png
@@ -539,7 +586,8 @@ entries:
   - apiVersion: v2
     appVersion: 1.0.16
     created: "2020-10-26T15:28:42.914889065Z"
-    description: A set of Grafana dashboards and Prometheus alerts to cover Kubernetes monitoring in an easy way using a drill-down principle.
+    description: A set of Grafana dashboards and Prometheus alerts to cover Kubernetes
+      monitoring in an easy way using a drill-down principle.
     digest: d5ae1fe9322ecd6fb9b13f03f3f952176db497be1a6a2835fa5faf19f96efa5f
     home: https://dnation.cloud
     icon: https://storage.googleapis.com/ifne.eu/public/icons/dnation_k8sm8g.png
@@ -573,7 +621,8 @@ entries:
       name: dnation-kubernetes-monitoring
       repository: https://dnationcloud.github.io/helm-hub
       version: 1.2.*
-    description: An umbrella helm chart for Kubernetes monitoring based on kube-prometheus-stack, loki-stack and dnation-kubernetes-monitoring.
+    description: An umbrella helm chart for Kubernetes monitoring based on kube-prometheus-stack,
+      loki-stack and dnation-kubernetes-monitoring.
     digest: 82b75be58777a0661441ae62d545e3f921a26fb5a72fb95b8c7a3ef793fa1252
     home: https://dnation.cloud
     icon: https://cdn.ifne.eu/public/icons/dnation_k8sm8g.png
@@ -609,7 +658,8 @@ entries:
       name: dnation-kubernetes-monitoring
       repository: https://dnationcloud.github.io/helm-hub
       version: 1.2.*
-    description: An umbrella helm chart for Kubernetes monitoring based on kube-prometheus-stack, loki-stack and dnation-kubernetes-monitoring.
+    description: An umbrella helm chart for Kubernetes monitoring based on kube-prometheus-stack,
+      loki-stack and dnation-kubernetes-monitoring.
     digest: 6228940b0655b09c3ca5c1b9ec090348668fb91374db3000ff40278a593dc78e
     home: https://dnation.cloud
     icon: https://cdn.ifne.eu/public/icons/dnation_k8sm8g.png
@@ -645,7 +695,8 @@ entries:
       name: dnation-kubernetes-monitoring
       repository: https://dnationcloud.github.io/helm-hub
       version: 1.1.*
-    description: An umbrella helm chart for Kubernetes monitoring based on kube-prometheus-stack, loki-stack and dnation-kubernetes-monitoring.
+    description: An umbrella helm chart for Kubernetes monitoring based on kube-prometheus-stack,
+      loki-stack and dnation-kubernetes-monitoring.
     digest: 8dcf367dd5792b7d0193b6dd2592742a2b9934cb76dc32f8bc9c0fda469a2b76
     home: https://dnation.cloud
     icon: https://cdn.ifne.eu/public/icons/dnation_k8sm8g.png
@@ -681,7 +732,8 @@ entries:
       name: dnation-kubernetes-monitoring
       repository: https://dnationcloud.github.io/helm-hub
       version: 1.1.*
-    description: An umbrella helm chart for Kubernetes monitoring based on kube-prometheus-stack, loki-stack and dnation-kubernetes-monitoring.
+    description: An umbrella helm chart for Kubernetes monitoring based on kube-prometheus-stack,
+      loki-stack and dnation-kubernetes-monitoring.
     digest: 280356b95d0aab64d2321fff4bec4c72811408ff92c0badd0572db6f4383e8ba
     home: https://dnation.cloud
     icon: https://cdn.ifne.eu/public/icons/dnation_k8sm8g.png
@@ -717,7 +769,8 @@ entries:
       name: dnation-kubernetes-monitoring
       repository: https://dnationcloud.github.io/helm-hub
       version: 1.1.*
-    description: An umbrella helm chart for Kubernetes monitoring based on kube-prometheus-stack, loki-stack and dnation-kubernetes-monitoring.
+    description: An umbrella helm chart for Kubernetes monitoring based on kube-prometheus-stack,
+      loki-stack and dnation-kubernetes-monitoring.
     digest: c0ee854e9dfc5d71fbfec2d61f95bc96e040725e962cdeb26e6cee6f1f818fc2
     home: https://dnation.cloud
     icon: https://cdn.ifne.eu/public/icons/dnation_k8sm8g.png
@@ -753,7 +806,8 @@ entries:
       name: dnation-kubernetes-monitoring
       repository: https://dnationcloud.github.io/helm-hub
       version: 1.1.*
-    description: An umbrella helm chart for Kubernetes monitoring based on kube-prometheus-stack, loki-stack and dnation-kubernetes-monitoring.
+    description: An umbrella helm chart for Kubernetes monitoring based on kube-prometheus-stack,
+      loki-stack and dnation-kubernetes-monitoring.
     digest: d421e579193bfb2fb78ddbd52476f1fc09a293401038c591a01cb33eeb1f47a8
     home: https://dnation.cloud
     icon: https://cdn.ifne.eu/public/icons/dnation_k8sm8g.png
@@ -789,7 +843,8 @@ entries:
       name: dnation-kubernetes-monitoring
       repository: https://dnationcloud.github.io/helm-hub
       version: 1.1.*
-    description: An umbrella helm chart for Kubernetes monitoring based on kube-prometheus-stack, loki-stack and dnation-kubernetes-monitoring.
+    description: An umbrella helm chart for Kubernetes monitoring based on kube-prometheus-stack,
+      loki-stack and dnation-kubernetes-monitoring.
     digest: 65c531607c1c86ee01b56525a0df205881a0dd97555f21152e6d51969ffe85f7
     home: https://dnation.cloud
     icon: https://cdn.ifne.eu/public/icons/dnation_k8sm8g.png
@@ -825,7 +880,8 @@ entries:
       name: dnation-kubernetes-monitoring
       repository: https://dnationcloud.github.io/helm-hub
       version: 1.0.*
-    description: An umbrella helm chart for Kubernetes monitoring based on kube-prometheus-stack, loki-stack and dnation-kubernetes-monitoring.
+    description: An umbrella helm chart for Kubernetes monitoring based on kube-prometheus-stack,
+      loki-stack and dnation-kubernetes-monitoring.
     digest: 573c0afb0f8d890a42105b1f5621d6bd03ed0fa12af3a6fb3a043398a114b315
     home: https://dnation.cloud
     icon: https://cdn.ifne.eu/public/icons/dnation_k8sm8g.png
@@ -861,7 +917,8 @@ entries:
       name: dnation-kubernetes-monitoring
       repository: https://dnationcloud.github.io/helm-hub
       version: 1.0.*
-    description: An umbrella helm chart for Kubernetes monitoring based on kube-prometheus-stack, loki-stack and dnation-kubernetes-monitoring.
+    description: An umbrella helm chart for Kubernetes monitoring based on kube-prometheus-stack,
+      loki-stack and dnation-kubernetes-monitoring.
     digest: a10081f5cf73d3ed526054dfb90ee208f171c94809b8c3f737980480127e2180
     home: https://dnation.cloud
     icon: https://cdn.ifne.eu/public/icons/dnation_k8sm8g.png
@@ -897,7 +954,8 @@ entries:
       name: dnation-kubernetes-monitoring
       repository: https://dnationcloud.github.io/helm-hub
       version: 1.0.*
-    description: An umbrella helm chart for Kubernetes monitoring based on kube-prometheus-stack, loki-stack and dnation-kubernetes-monitoring.
+    description: An umbrella helm chart for Kubernetes monitoring based on kube-prometheus-stack,
+      loki-stack and dnation-kubernetes-monitoring.
     digest: 09195e56971aa3e574728ad08c133c72d7261ab3759d5f0cacad7e4347cdc227
     home: https://dnation.cloud
     icon: https://cdn.ifne.eu/public/icons/dnation_k8sm8g.png
@@ -933,7 +991,8 @@ entries:
       name: dnation-kubernetes-monitoring
       repository: https://dnationcloud.github.io/helm-hub
       version: 1.0.*
-    description: An umbrella helm chart for Kubernetes monitoring based on kube-prometheus-stack, loki-stack and dnation-kubernetes-monitoring.
+    description: An umbrella helm chart for Kubernetes monitoring based on kube-prometheus-stack,
+      loki-stack and dnation-kubernetes-monitoring.
     digest: ea9855ab21c960a24330289b2dc9f691bd76a351fdb038e36d64e4116f944849
     home: https://dnation.cloud
     icon: https://cdn.ifne.eu/public/icons/dnation_k8sm8g.png
@@ -969,7 +1028,8 @@ entries:
       name: dnation-kubernetes-monitoring
       repository: https://dnationcloud.github.io/helm-hub
       version: 1.0.*
-    description: An umbrella helm chart for Kubernetes monitoring based on kube-prometheus-stack, loki-stack and dnation-kubernetes-monitoring.
+    description: An umbrella helm chart for Kubernetes monitoring based on kube-prometheus-stack,
+      loki-stack and dnation-kubernetes-monitoring.
     digest: 511035c7c3aef40c510745814809e2022f67af9068659f3f6a1d0d5f564a9f05
     home: https://dnation.cloud
     icon: https://cdn.ifne.eu/public/icons/dnation_k8sm8g.png
@@ -1005,7 +1065,8 @@ entries:
       name: dnation-kubernetes-monitoring
       repository: https://dnationcloud.github.io/helm-hub
       version: 1.0.*
-    description: An umbrella helm chart for Kubernetes monitoring based on kube-prometheus-stack, loki-stack and dnation-kubernetes-monitoring.
+    description: An umbrella helm chart for Kubernetes monitoring based on kube-prometheus-stack,
+      loki-stack and dnation-kubernetes-monitoring.
     digest: 417200799d9e38e91a502087224c5a5cbc4a08bb2916ba7b5f32dce541dde41d
     home: https://dnation.cloud
     icon: https://cdn.ifne.eu/public/icons/dnation_k8sm8g.png
@@ -1041,7 +1102,8 @@ entries:
       name: dnation-kubernetes-monitoring
       repository: https://dnationcloud.github.io/helm-hub
       version: 1.0.*
-    description: An umbrella helm chart for Kubernetes monitoring based on kube-prometheus-stack, loki-stack and dnation-kubernetes-monitoring.
+    description: An umbrella helm chart for Kubernetes monitoring based on kube-prometheus-stack,
+      loki-stack and dnation-kubernetes-monitoring.
     digest: 632fabc6d02f326cecf5c3c07d349162779f95964a0e0348b0ac7f46a658b8e9
     home: https://dnation.cloud
     icon: https://cdn.ifne.eu/public/icons/dnation_k8sm8g.png
@@ -1077,7 +1139,8 @@ entries:
       name: dnation-kubernetes-monitoring
       repository: https://dnationcloud.github.io/helm-hub
       version: 1.0.*
-    description: An umbrella helm chart for Kubernetes monitoring based on kube-prometheus-stack, loki-stack and dnation-kubernetes-monitoring.
+    description: An umbrella helm chart for Kubernetes monitoring based on kube-prometheus-stack,
+      loki-stack and dnation-kubernetes-monitoring.
     digest: 95ace19220d28d938337c7583860acba12aa90b6e0568fa2b928daaafbf61464
     home: https://dnation.cloud
     icon: https://cdn.ifne.eu/public/icons/dnation_k8sm8g.png
@@ -1113,7 +1176,8 @@ entries:
       name: dnation-kubernetes-monitoring
       repository: https://dnationcloud.github.io/helm-hub
       version: 1.0.*
-    description: An umbrella helm chart for Kubernetes monitoring based on kube-prometheus-stack, loki-stack and dnation-kubernetes-monitoring.
+    description: An umbrella helm chart for Kubernetes monitoring based on kube-prometheus-stack,
+      loki-stack and dnation-kubernetes-monitoring.
     digest: e808822c6589e2ac9e6c6009d87bb957240fc744eba4a4fd4c900651ef9dd095
     home: https://dnation.cloud
     icon: https://storage.googleapis.com/ifne.eu/public/icons/dnation_k8sm8g.png
@@ -1150,7 +1214,8 @@ entries:
       name: prometheus-blackbox-exporter
       repository: https://prometheus-community.github.io/helm-charts
       version: 4.9.*
-    description: dNation Ping detects network connection problems by measuring ping response times of selected servers every 15 seconds.
+    description: dNation Ping detects network connection problems by measuring ping
+      response times of selected servers every 15 seconds.
     digest: 4aa877e9587af0f25c4721e0ddd368a5b6d794836a961a2a8d25db8b005507ff
     home: https://www.dnation.cloud
     icon: https://cdn.ifne.eu/public/icons/dnation_ping.png
@@ -1185,7 +1250,8 @@ entries:
       name: prometheus-blackbox-exporter
       repository: https://prometheus-community.github.io/helm-charts
       version: 4.9.*
-    description: dNation Ping detects network connection problems by measuring ping response times of selected servers every 15 seconds.
+    description: dNation Ping detects network connection problems by measuring ping
+      response times of selected servers every 15 seconds.
     digest: 70f57dbc0664c44ba2c01f4e92cdaf8afad105d5aedea0ff077fee6741363a33
     home: https://www.dnation.cloud
     icon: https://cdn.ifne.eu/public/icons/dnation_ping.png
@@ -1220,7 +1286,8 @@ entries:
       name: prometheus-blackbox-exporter
       repository: https://prometheus-community.github.io/helm-charts
       version: 4.9.*
-    description: dNation Ping detects network connection problems by measuring ping response times of selected servers every 15 seconds.
+    description: dNation Ping detects network connection problems by measuring ping
+      response times of selected servers every 15 seconds.
     digest: 1da6e4967a393f357bd89ed5cfb0ea5424a48ed0b76d5cc0cfe8ac5f6b37b473
     home: https://www.dnation.cloud
     icon: https://cdn.ifne.eu/public/icons/dnation_ping.png
@@ -1255,7 +1322,8 @@ entries:
       name: prometheus-blackbox-exporter
       repository: https://prometheus-community.github.io/helm-charts
       version: 4.9.*
-    description: dNation Ping detects network connection problems by measuring ping response times of selected servers every 15 seconds.
+    description: dNation Ping detects network connection problems by measuring ping
+      response times of selected servers every 15 seconds.
     digest: 38b1ee130d954faae01612ae3c9ca16484dfe1307eab926a63c144eaf8ec7f22
     home: https://www.dnation.cloud
     icon: https://cdn.ifne.eu/public/icons/dnation_ping.png
@@ -1290,7 +1358,8 @@ entries:
       name: prometheus-blackbox-exporter
       repository: https://prometheus-community.github.io/helm-charts
       version: 4.9.*
-    description: dNation Ping is a transparent tool for pinging selected IP addresses or domain names in set intervals with results displayed on graph
+    description: dNation Ping is a transparent tool for pinging selected IP addresses
+      or domain names in set intervals with results displayed on graph
     digest: cc89cde8b5fc09cdd0a11beb67613b08c9c8a96d731dd265c5478b166231deab
     home: https://git.ifne.eu/dnation/ping
     icon: https://cdn.ifne.eu/public/icons/dnation_ping.png
@@ -1323,7 +1392,8 @@ entries:
       name: prometheus-blackbox-exporter
       repository: https://prometheus-community.github.io/helm-charts
       version: 4.9.*
-    description: dNation Ping is a transparent tool for pinging selected IP addresses or domain names in set intervals with results displayed on graph
+    description: dNation Ping is a transparent tool for pinging selected IP addresses
+      or domain names in set intervals with results displayed on graph
     digest: 04e3c0cbf57629e4d9fb6839ad1051368a4d8262c6e40978609c91d39510dcf2
     home: https://git.ifne.eu/dnation/ping
     icon: https://cdn.ifne.eu/public/icons/dnation_ping.png
@@ -1356,7 +1426,8 @@ entries:
       name: prometheus-blackbox-exporter
       repository: https://prometheus-community.github.io/helm-charts
       version: 4.9.*
-    description: dNation Ping is a transparent tool for pinging selected IP addresses or domain names in set intervals with results displayed on graph
+    description: dNation Ping is a transparent tool for pinging selected IP addresses
+      or domain names in set intervals with results displayed on graph
     digest: bcdca4088c31c34742f63b963183e19ac543e8aed2397b6735879aae4e890ac5
     home: https://git.ifne.eu/dnation/ping
     icon: https://cdn.ifne.eu/public/icons/dnation_ping.png
@@ -1373,4 +1444,4 @@ entries:
     urls:
     - https://dnationcloud.github.io/helm-hub/dnation-ping-0.1.2.tgz
     version: 0.1.2
-generated: "2021-05-13T07:34:06.358274968Z"
+generated: "2021-06-07T07:00:29.447427634Z"
