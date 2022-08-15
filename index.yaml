@@ -768,6 +768,52 @@ entries:
     version: 1.0.16
   dnation-kubernetes-monitoring-stack:
   - apiVersion: v2
+    appVersion: 1.4.1
+    created: "2022-08-15T12:16:45.063704269Z"
+    dependencies:
+    - condition: kube-prometheus-stack.enabled
+      name: kube-prometheus-stack
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 39.6.*
+    - condition: loki.enabled
+      name: loki
+      repository: https://grafana.github.io/helm-charts
+      version: 2.9.*
+    - condition: loki-distributed.enabled
+      name: loki-distributed
+      repository: https://grafana.github.io/helm-charts
+      version: 0.42.*
+    - condition: promtail.enabled
+      name: promtail
+      repository: https://grafana.github.io/helm-charts
+      version: 3.11.*
+    - condition: dnation-kubernetes-monitoring.enabled
+      name: dnation-kubernetes-monitoring
+      repository: https://dnationcloud.github.io/helm-hub
+      version: 1.4.*
+    description: An umbrella helm chart for Kubernetes monitoring based on kube-prometheus-stack,
+      loki, loki-distributed, promtail and dnation-kubernetes-monitoring.
+    digest: 5c92a60ee9d19ce1258c68d4ebfb64d1d8d0191b243478ca51eae4041ba44315
+    home: https://dnation.cloud
+    icon: https://cdn.ifne.eu/public/icons/dnation_k8sm8g.png
+    keywords:
+    - dnation
+    - kubernetes
+    - monitoring
+    - logging
+    - prometheus
+    - grafana
+    - loki
+    maintainers:
+    - email: cloud@dNation.cloud
+      name: dNation
+    name: dnation-kubernetes-monitoring-stack
+    sources:
+    - https://github.com/dNationCloud/kubernetes-monitoring-stack
+    urls:
+    - https://dnationcloud.github.io/helm-hub/dnation-kubernetes-monitoring-stack-2.0.0.tgz
+    version: 2.0.0
+  - apiVersion: v2
     appVersion: 1.4.0
     created: "2022-02-11T09:29:20.655743978Z"
     dependencies:
@@ -1834,4 +1880,4 @@ entries:
     urls:
     - https://dnationcloud.github.io/helm-hub/dnation-ping-0.1.2.tgz
     version: 0.1.2
-generated: "2022-08-15T09:50:54.920856437Z"
+generated: "2022-08-15T12:16:45.016219291Z"
