@@ -1032,6 +1032,57 @@ entries:
     version: 1.0.16
   dnation-kubernetes-monitoring-stack:
   - apiVersion: v2
+    appVersion: 2.2.2
+    created: "2023-04-19T07:26:55.783199081Z"
+    dependencies:
+    - condition: kube-prometheus-stack.enabled
+      name: kube-prometheus-stack
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 39.6.*
+    - condition: thanos.enabled
+      name: thanos
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.4.*
+    - condition: loki.enabled
+      name: loki
+      repository: https://grafana.github.io/helm-charts
+      version: 2.9.*
+    - condition: loki-distributed.enabled
+      name: loki-distributed
+      repository: https://grafana.github.io/helm-charts
+      version: 0.42.*
+    - condition: promtail.enabled
+      name: promtail
+      repository: https://grafana.github.io/helm-charts
+      version: 3.11.*
+    - condition: dnation-kubernetes-monitoring.enabled
+      name: dnation-kubernetes-monitoring
+      repository: https://dnationcloud.github.io/helm-hub
+      version: 2.2.*
+    description: An umbrella helm chart for Kubernetes monitoring based on kube-prometheus-stack,
+      thanos, loki, loki-distributed, promtail and dnation-kubernetes-monitoring.
+    digest: 5b3e94f50acff0e40072e38a6f75c65503c81c165632c45fff40cada4983417f
+    home: https://dnation.cloud
+    icon: https://cdn.ifne.eu/public/icons/dnation_k8sm8g.png
+    keywords:
+    - dnation
+    - kubernetes
+    - monitoring
+    - logging
+    - prometheus
+    - grafana
+    - loki
+    - thanos
+    maintainers:
+    - email: cloud@dNation.cloud
+      name: dNation
+    name: dnation-kubernetes-monitoring-stack
+    sources:
+    - https://github.com/dNationCloud/kubernetes-monitoring-stack
+    urls:
+    - https://dnationcloud.github.io/helm-hub/dnation-kubernetes-monitoring-stack-2.3.0.tgz
+    version: 2.3.0
+  - apiVersion: v2
     appVersion: 2.2.0
     created: "2023-03-30T11:06:34.664576818Z"
     dependencies:
@@ -2527,4 +2578,4 @@ entries:
     urls:
     - https://dnationcloud.github.io/helm-hub/dnation-ping-0.1.2.tgz
     version: 0.1.2
-generated: "2023-04-18T13:52:35.294668632Z"
+generated: "2023-04-19T07:26:55.735932633Z"
