@@ -2578,4 +2578,21 @@ entries:
     urls:
     - https://dnationcloud.github.io/helm-hub/dnation-ping-0.1.2.tgz
     version: 0.1.2
-generated: "2023-04-19T07:26:55.735932633Z"
+  ssl-exporter:
+  - apiVersion: v2
+    appVersion: 2.4.2
+    created: "2023-05-04T07:22:58.053955118Z"
+    description: A Helm chart for ribbybibby/ssl_exporter
+    digest: e14bb83dbe8557b20b4594850f80b33610a7996a63f9bfdb24eae6f3e1610bd6
+    home: https://dnation.cloud
+    maintainers:
+    - email: cloud@dNation.cloud
+      name: dNation
+    name: ssl-exporter
+    sources:
+    - https://github.com/dNationCloud/ssl-exporter
+    - https://github.com/ribbybibby/ssl_exporter
+    urls:
+    - https://dnationcloud.github.io/helm-hub/ssl-exporter-1.0.1.tgz
+    version: 1.0.1
+generated: "2023-05-04T07:22:58.05312581Z"
