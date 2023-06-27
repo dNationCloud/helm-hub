@@ -1194,6 +1194,62 @@ entries:
     version: 1.0.16
   dnation-kubernetes-monitoring-stack:
   - apiVersion: v2
+    appVersion: 2.5.2
+    created: "2023-06-27T10:05:59.243433447Z"
+    dependencies:
+    - condition: kube-prometheus-stack.enabled
+      name: kube-prometheus-stack
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 45.10.*
+    - condition: thanos.enabled
+      name: thanos
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.4.*
+    - condition: loki.enabled
+      name: loki
+      repository: https://grafana.github.io/helm-charts
+      version: 5.5.*
+    - condition: loki-distributed.enabled
+      name: loki-distributed
+      repository: https://grafana.github.io/helm-charts
+      version: 0.68.*
+    - condition: promtail.enabled
+      name: promtail
+      repository: https://grafana.github.io/helm-charts
+      version: 6.0.*
+    - condition: dnation-kubernetes-monitoring.enabled
+      name: dnation-kubernetes-monitoring
+      repository: https://dnationcloud.github.io/helm-hub
+      version: 2.5.*
+    - condition: ssl-exporter.enabled
+      name: ssl-exporter
+      repository: https://dnationcloud.github.io/helm-hub
+      version: 1.1.*
+    description: An umbrella helm chart for Kubernetes monitoring based on kube-prometheus-stack,
+      thanos, loki, loki-distributed, promtail and dnation-kubernetes-monitoring.
+    digest: 9fca7e9d378db55e1e2c054bddd1d20de39fc5f1f2243345abe9be30b7f319cd
+    home: https://dnation.cloud
+    icon: https://cdn.ifne.eu/public/icons/dnation_k8sm8g.png
+    keywords:
+    - dnation
+    - kubernetes
+    - monitoring
+    - logging
+    - prometheus
+    - grafana
+    - loki
+    - thanos
+    - ssl-exporter
+    maintainers:
+    - email: cloud@dNation.cloud
+      name: dNation
+    name: dnation-kubernetes-monitoring-stack
+    sources:
+    - https://github.com/dNationCloud/kubernetes-monitoring-stack
+    urls:
+    - https://dnationcloud.github.io/helm-hub/dnation-kubernetes-monitoring-stack-3.0.2.tgz
+    version: 3.0.2
+  - apiVersion: v2
     appVersion: 2.5.1
     created: "2023-06-20T11:51:48.381477261Z"
     dependencies:
@@ -3181,4 +3237,4 @@ entries:
     urls:
     - https://dnationcloud.github.io/helm-hub/ssl-exporter-1.0.1.tgz
     version: 1.0.1
-generated: "2023-06-27T09:49:21.299513854Z"
+generated: "2023-06-27T10:05:59.180251843Z"
