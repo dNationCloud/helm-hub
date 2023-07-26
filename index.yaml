@@ -3301,6 +3301,22 @@ entries:
   ssl-exporter:
   - apiVersion: v2
     appVersion: 2.4.2
+    created: "2023-07-26T12:25:07.985009825Z"
+    description: A Helm chart for ribbybibby/ssl_exporter
+    digest: 93328995d3f9c94a40fc34381945b132e258882fe96356a3fe37fc3e8d44ec68
+    home: https://dnation.cloud
+    maintainers:
+    - email: cloud@dNation.cloud
+      name: dNation
+    name: ssl-exporter
+    sources:
+    - https://github.com/dNationCloud/ssl-exporter
+    - https://github.com/ribbybibby/ssl_exporter
+    urls:
+    - https://dnationcloud.github.io/helm-hub/ssl-exporter-1.2.0.tgz
+    version: 1.2.0
+  - apiVersion: v2
+    appVersion: 2.4.2
     created: "2023-06-19T08:46:30.498804464Z"
     description: A Helm chart for ribbybibby/ssl_exporter
     digest: 7dcef31876562ac1d36f6104a7add8cf621a86ca6ef33d2dd6c2f68750d40efc
@@ -3347,4 +3363,4 @@ entries:
     urls:
     - https://dnationcloud.github.io/helm-hub/ssl-exporter-1.0.1.tgz
     version: 1.0.1
-generated: "2023-07-18T13:03:26.497878578Z"
+generated: "2023-07-26T12:25:07.984154019Z"
