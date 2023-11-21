@@ -256,6 +256,33 @@ entries:
     version: 0.1.0
   dnation-kubernetes-monitoring:
   - apiVersion: v2
+    appVersion: 2.6.2
+    created: "2023-11-21T12:53:29.334581368Z"
+    dependencies:
+    - condition: dnation-kubernetes-jsonnet-translator.enabled
+      name: dnation-kubernetes-jsonnet-translator
+      repository: https://dnationcloud.github.io/helm-hub/
+      version: 1.0.*
+    description: A set of Grafana dashboards and Prometheus alerts to cover Kubernetes
+      monitoring in an easy way using a drill-down principle.
+    digest: 1d1e37e2c3c1e118409145075b82231845b3a0204896624e73a77168c71b9844
+    home: https://dnation.cloud
+    icon: https://cdn.ifne.eu/public/icons/dnation_k8sm8g.png
+    keywords:
+    - dnation
+    - kubernetes
+    - monitoring
+    - logging
+    maintainers:
+    - email: cloud@dNation.cloud
+      name: dNation
+    name: dnation-kubernetes-monitoring
+    sources:
+    - https://github.com/dNationCloud/kubernetes-monitoring
+    urls:
+    - https://dnationcloud.github.io/helm-hub/dnation-kubernetes-monitoring-2.6.2.tgz
+    version: 2.6.2
+  - apiVersion: v2
     appVersion: 2.6.1
     created: "2023-11-21T12:47:54.957049566Z"
     dependencies:
@@ -3697,4 +3724,4 @@ entries:
     urls:
     - https://dnationcloud.github.io/helm-hub/ssl-exporter-1.0.1.tgz
     version: 1.0.1
-generated: "2023-11-21T12:47:54.955091068Z"
+generated: "2023-11-21T12:53:29.332631462Z"
