@@ -1674,6 +1674,71 @@ entries:
     version: 1.0.16
   dnation-kubernetes-monitoring-stack:
   - apiVersion: v2
+    appVersion: 2.7.9
+    created: "2025-12-04T14:53:16.007439602Z"
+    dependencies:
+    - condition: kube-prometheus-stack.enabled
+      name: kube-prometheus-stack
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 59.1.*
+    - condition: thanos.enabled
+      name: thanos
+      repository: https://charts.bitnami.com/bitnami
+      version: 15.8.*
+    - condition: loki.enabled
+      name: loki
+      repository: https://grafana.github.io/helm-charts
+      version: 6.20.*
+    - condition: loki-distributed.enabled
+      name: loki-distributed
+      repository: https://grafana.github.io/helm-charts
+      version: 0.75.*
+    - condition: promtail.enabled
+      name: promtail
+      repository: https://grafana.github.io/helm-charts
+      version: 6.16.*
+    - condition: dnation-kubernetes-monitoring.enabled
+      name: dnation-kubernetes-monitoring
+      repository: https://dnationcloud.github.io/helm-hub
+      version: 2.7.*
+    - condition: ssl-exporter.enabled
+      name: ssl-exporter
+      repository: https://dnationcloud.github.io/helm-hub
+      version: 1.2.*
+    - condition: prometheus-blackbox-exporter.enabled
+      name: prometheus-blackbox-exporter
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 9.1.*
+    - condition: prometheus-openstack-exporter.enabled
+      name: prometheus-openstack-exporter
+      repository: oci://registry.dnation.cloud/openstack-exporter
+      version: 0.4.5
+    description: An umbrella helm chart for Kubernetes monitoring based on kube-prometheus-stack,
+      thanos, loki, promtail and dnation-kubernetes-monitoring
+    digest: 5d9f74257954f0e4ad4df8da8de9dccbe6bcb64eea7cb8f81efb89aa099efbc2
+    home: https://dnation.cloud
+    icon: https://cdn.ifne.eu/public/icons/dnation_k8sm8g.png
+    keywords:
+    - dnation
+    - kubernetes
+    - monitoring
+    - logging
+    - prometheus
+    - grafana
+    - loki
+    - thanos
+    - ssl-exporter
+    - blackbox-exporter
+    maintainers:
+    - email: cloud@dNation.cloud
+      name: dNation
+    name: dnation-kubernetes-monitoring-stack
+    sources:
+    - https://github.com/dNationCloud/kubernetes-monitoring-stack
+    urls:
+    - https://dnationcloud.github.io/helm-hub/dnation-kubernetes-monitoring-stack-3.8.8.tgz
+    version: 3.8.8
+  - apiVersion: v2
     appVersion: 2.7.5
     created: "2025-10-31T14:25:44.695659063Z"
     dependencies:
@@ -5125,4 +5190,4 @@ entries:
     urls:
     - https://dnationcloud.github.io/helm-hub/ssl-exporter-1.0.1.tgz
     version: 1.0.1
-generated: "2025-12-04T14:00:31.051995664Z"
+generated: "2025-12-04T14:53:15.949529655Z"
